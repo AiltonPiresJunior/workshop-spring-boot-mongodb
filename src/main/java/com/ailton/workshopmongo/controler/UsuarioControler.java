@@ -17,11 +17,10 @@ public class UsuarioControler {
 	
 	@GetMapping
 	public ResponseEntity<List<Usuario>> findAll(){
-		
 		Usuario maria = new Usuario("1", "Maria Brown", "maria@gmail.com");
 		Usuario alex = new Usuario("2", "Alex Green", "alex@gmail.com");
-		List<Usuario> list = new ArrayList<>();
 		
+		List<Usuario> list = new ArrayList<>();
 		list.addAll(Arrays.asList(maria,alex));
 		return ResponseEntity.ok().body(list);
 	}
