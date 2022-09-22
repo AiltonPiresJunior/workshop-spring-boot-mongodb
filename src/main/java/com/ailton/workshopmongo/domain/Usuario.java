@@ -16,7 +16,8 @@ import lombok.experimental.SuperBuilder;
 @EqualsAndHashCode(of = {"id"})
 public class Usuario {
 
-	private Long id;
+	private String id;
 	private String name;
 	private String email;
+	
 }

@@ -7,8 +7,7 @@ import com.ailton.workshopmongo.domain.Usuario;
 public interface UsuarioService {
 	
 	List<Usuario> findAll() ;
-
-	Usuario findById(Long id);
-
+	
+	Usuario findById(String id);
 	
 }
