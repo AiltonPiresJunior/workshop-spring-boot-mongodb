@@ -10,5 +10,7 @@ import com.ailton.workshopmongo.domain.Usuario;
 @Repository
 public interface UsuarioRepository extends MongoRepository<Usuario, String> {
 
+	Optional<Usuario> findByEmail(String email);
+
 	
 }

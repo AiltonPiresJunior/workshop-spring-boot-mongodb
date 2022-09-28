@@ -9,5 +9,14 @@ public interface UsuarioService {
 	List<Usuario> findAll() ;
 	
 	Usuario findById(String id);
-	
+
+	Usuario cadastraUsuario(Usuario usuario);
+
+	Usuario findByEmail(String email);
+
+	List<Usuario> deletaTodosUsarios();
+
+	Usuario deletaUsuario(String id);
+
+	Usuario alteraUsuario(String id, Usuario usuario);
 }
